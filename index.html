@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Pengaduan Masyarakat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .nav-item.active .nav-link {
+        color: #0dfd21;  
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Pengaduan Masyarakat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/login.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-success" href="pages/register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="mb-3">Selamat Datang di Sistem Pengaduan Masyarakat Tanjungpinang</h1>
+        <p class="lead">Kami berkomitmen untuk meningkatkan pelayanan publik dengan menerima setiap pengaduan masyarakat dan menyelesaikannya dengan cepat.</p>
+        <a href="pages/login.html" class="btn btn-success btn-lg mb-2">Ayo Laporkan</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="assets/images/Pengaduan.jpg" alt="Ilustrasi Pengaduan" class="img-fluid rounded-circle" style="max-width: 70%; height: auto;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Steps Section with Cards -->
+  <div class="container my-5">
+    <h3 class="text-center mb-4">Tata Cara Melakukan Pelaporan:</h3>
+    <div class="row text-center">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/images/login.png" class="card-img-top d-block mx-auto my-2" style="width: 50px;" alt="Step 1"> <!-- Gambar dipusatkan dan ukurannya diatur ke 50px -->
+                <div class="card-body">
+                    <p class="card-text">1. Klik tombol "AYO LAPORKAN"</p>
+                    <p class="card-text">dan lakukan login ke akun Anda.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/images/edit.png" class="card-img-top d-block mx-auto my-2" style="width: 50px;" alt="Step 2"> <!-- Gambar dipusatkan dan ukurannya diatur ke 50px -->
+                <div class="card-body">
+                    <p class="card-text">2. Setelah berhasil login</p>
+                    <p class="card-text">Anda akan diarahkan ke halaman formulir pelaporan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/images/Submit.png" class="card-img-top d-block mx-auto my-2" style="width: 50px;" alt="Step 3"> <!-- Gambar dipusatkan dan ukurannya diatur ke 50px -->
+                <div class="card-body">
+                    <p class="card-text">3. Isi formulir pelaporan</p>
+                    <p class="card-text">Termasuk deskripsi pengaduan dan informasi pendukung.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/images/mail.png" class="card-img-top d-block mx-auto my-2" style="width: 50px;" alt="Step 4"> <!-- Gambar dipusatkan dan ukurannya diatur ke 50px -->
+                <div class="card-body">
+                    <p class="card-text">4. Klik "Kirim"</p>
+                    <p class="card-text">Untuk menyelesaikan pengaduan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/images/notification-bell.png" class="card-img-top d-block mx-auto my-2" style="width: 50px;" alt="Step 5"> <!-- Gambar dipusatkan dan ukurannya diatur ke 50px -->
+                <div class="card-body">
+                    <p class="card-text">5. Anda akan menerima notifikasi</p>
+                    <p class="card-text">Setelah pengaduan berhasil dikirimkan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/images/data-processing.png" class="card-img-top d-block mx-auto my-2" style="width: 50px;" alt="Step 6"> <!-- Gambar dipusatkan dan ukurannya diatur ke 50px -->
+                <div class="card-body">
+                    <p class="card-text">6. Tim kami memproses laporan Anda</p>
+                    <p class="card-text">Dan memberikan pembaruan melalui email Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 mt-5">
+    <p>&copy; 2024 Pengaduan Masyarakat Tanjungpinang. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

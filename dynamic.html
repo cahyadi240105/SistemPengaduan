@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Bar Chart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Dynamic Bar Chart</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <canvas id="myBarChart"></canvas>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <h5>Edit Data:</h5>
+                <form id="chartForm">
+                    <div class="mb-3">
+                        <label for="dataLabel" class="form-label">Label</label>
+                        <input type="text" class="form-control" id="dataLabel" placeholder="Enter label">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dataValue" class="form-label">Value</label>
+                        <input type="number" class="form-control" id="dataValue" placeholder="Enter value">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="addData()">Add Data</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var data = {
+            labels: ["Tertolak", "Terproses", "Tertunda", "Selesai"],
+            datasets: [{
+                data: [21, 18, 18, 4], 
+                backgroundColor: ['#FF0000', '#0000FF', '#FFFF00', '#008000'], 
+                borderColor: '#fff',
+                borderWidth: 1
+            }]
+        };        
+
+        // Konfigurasi Pie Chart
+        var options = {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    enabled: true
+                }
+            }
+        };
+
+        // Menampilkan chart pada canvas
+        var ctx = document.getElementById('myPieChart').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',  // Jenis chart: pie chart
+            data: data,   // Data yang akan digunakan
+            options: options // Opsi konfigurasi
+        });
+    </script>
+</body>
+</html>
